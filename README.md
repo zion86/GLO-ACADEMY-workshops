@@ -1,1 +1,1 @@
-# -GLO-ACADEMY--workshops
+# GLO-ACADEMY-workshops
