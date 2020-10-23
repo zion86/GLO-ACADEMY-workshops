@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/index.js" defer></script>
+  <title>Create new post</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <a class="page-header__link page-header__logo" href="index.html">
+          <svg class="logo" width="48" height="13">
+            <use href="ico/i-icons.svg#logo"></use>
+          </svg>
+        </a>
+
+        <nav class="header-menu page-header__header-menu">
+          <ul class="header-menu__list">
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="/">Свежее</a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="/">Лучшее</a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="/">Горячее</a>
+            </li>
+            <li class="header-menu__item">
+              <a class="header-menu__link" href="/">Подписки</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ./nav -->
+
+        <fieldset class="search">
+          <input class="search__input" type="search" placeholder="Поиск по сайту">
+          <button class="search__btn">
+            <svg class="search__ico" width="14" height="14">
+              <use href="ico/i-icons.svg#search"></use>
+            </svg>
+          </button>
+        </fieldset>
+        <!-- ./search -->
+
+        <div class="menu page-header__menu">
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+        </div>
+        <!-- ./menu -->
+      </div>
+      <!-- ./page-header__inner -->
+    </div>
+  </header>
+  <!-- ./header -->
+
+  <div class="container">
+
+    <div class="page-inner">
+      <main class="main-content">
+
+        <form class="form" action="/" method="post">
+          <input class="form__input-title" type="text" placeholder="Заголовок поста">
+          <textarea class="form__input-text" placeholder="Текст вашего поста"></textarea>
+
+          <fieldset class="form__btns">
+            <button class="btn btn--orange">
+              <svg class="btn__ico" width="12" height="14">
+                <use href="ico/i-icons.svg#new-post"></use>
+              </svg>
+              Опубликовать пост
+            </button>
+            <div class="form__btns-media">
+              <button class="btn">
+                <svg class="btn__ico" width="12" height="14">
+                  <use href="ico/i-icons.svg#video"></use>
+                </svg>
+                Видео
+              </button>
+              <button class="btn">
+                <svg class="btn__ico" width="12" height="14">
+                  <use href="ico/i-icons.svg#photo"></use>
+                </svg>
+                Фото
+              </button>
+            </div>
+          </fieldset>
+        </form>
+
+      </main>
+      <!-- /.page-main -->
+
+      <aside class="sidebar">
+
+        <div class="user">
+          <div class="user__top">
+            <div class="user__info">
+              <img width="40" height="40" class="user__avatar" src="img/avatar.jpg" alt="Photo: user">
+              <a class="user__name" href="/">islamovartem</a>
+            </div>
+            <button class="exit-btn">
+              <svg width="22" height="22">
+                <use href="ico/i-icons.svg#exit-btn"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="user__body">
+            <nav class="user__nav">
+              <ul class="user__nav-list">
+                <li class="user__nav-item">
+                  <a class="user__nav-link" href="/">Ответы</a>
+                </li>
+                <li class="user__nav-item">
+                  <a class="user__nav-link" href="/">Комментарии</a>
+                </li>
+                <li class="user__nav-item">
+                  <a class="user__nav-link user__nav-link--active" href="/">Оценки</a>
+                </li>
+                <li class="user__nav-item">
+                  <a class="user__nav-link" href="/">Сохраненное</a>
+                </li>
+                <li class="user__nav-item">
+                  <a class="user__nav-link" href="/">Подписки</a>
+                </li>
+                <li class="user__nav-item">
+                  <a class="user__nav-link" href="/">Заметки</a>
+                </li>
+                <li class="user__nav-item">
+                  <a class="user__nav-link" href="/">Игнор-лист</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- ./user -->
+
+        <figure class="ads">
+          <img class="ads__img" src="img/promo.jpg" alt="ads banner">
+          <figcaption class="item__text">Реклама</figcaption>
+        </figure>
+        <!-- /.promo -->
+
+      </aside>
+      <!-- ./sidebar -->
+    </div>
+
+  </div>
+
+</body>
+
+</html>
