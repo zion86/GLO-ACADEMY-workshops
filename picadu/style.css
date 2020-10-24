@@ -154,7 +154,7 @@ body {
 
 /* search */
 .search {
-  min-width: 237px;
+  width: 237px;
   display: flex;
   border: 1px solid var(--c-grey-v1);
   border-radius: var(--br);
