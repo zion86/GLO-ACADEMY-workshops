@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Delivery Food</title>
+</head>
+
+<body class="page">
+
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__inner">
+        <svg class="logo page-header__logo" width="101" height="37">
+          <use href="ico/icons.svg#logo"></use>
+        </svg>
+        <!-- ./logo -->
+        <form action="/" class="search-form page-header__search-form">
+          <input class="search-form__input" type="search" placeholder="Адрес доставки">
+          <svg class="search-form__ico" width="16" height="16">
+            <use href="ico/icons.svg#home"></use>
+          </svg>
+        </form>
+        <!-- ./search-form -->
+        <ul class="btns-list">
+          <li class="btns-list__item">
+            <button class="btn btn--enter">
+              <svg class="btn__ico btn__ico--white" width="12" height="14">
+                <use href="ico/icons.svg#avatar"></use>
+              </svg>Войти
+            </button>
+          </li>
+          <li class="btns-list__item">
+            <button class="btn">
+              <svg class="btn__ico" width="15" height="13">
+                <use href="ico/icons.svg#cart"></use>
+              </svg>Корзина
+            </button>
+          </li>
+        </ul>
+        <!-- ./btns-list -->
+      </div>
+      <!-- /.page-header__inner -->
+    </div>
+    <!-- ./container -->
+  </header>
+  <!-- ./page-header -->
+
+  <main class="page-main">
+    <div class="container">
+      <section class="promo">
+        <div class="promo__inner">
+          <h1 class="promo__title">Онлайн-сервис<br> доставки еды на дом</h1>
+          <p class="promo__text">Блюда из любимого ресторана привезет<br> курьер в перчатках, маске и с антисептиком</p>
+        </div>
+      </section>
+      <!-- /.promo -->
+      <section class="goods">
+        <header class="goods__header">
+          <h2 class="goods__title">Рестораны</h2>
+          <form action="/" class="search-form goods__search-form">
+            <input class="search-form__input goods__input" type="search" placeholder="Поиск блюд и ресторанов">
+            <svg class="search-form__ico" width="16" height="16">
+              <use href="ico/icons.svg#search"></use>
+            </svg>
+          </form>
+          <!-- ./search-form -->
+        </header>
+        <!-- ./goods__header -->
+        <div class="goods__body">
+          <div class="goods__wrapper">
+            <div class="card">
+              <img class="card__img" src="img/goods-1.jpg" alt="pizza image">
+              <div class="card__footer">
+                <div class="card__info">
+                  <h2 class="card__title">Пицца плюс</h2>
+                  <span class="card__time">50 мин</span>
+                </div>
+                <div class="card__price">
+                  <span class="card__rating">4.5</span>
+                  <div class="card__total">
+                    <span class="card__cost">От 900 ₽</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card__img" src="img/goods-2.jpg" alt="pizza image">
+              <div class="card__footer">
+                <div class="card__info">
+                  <h2 class="card__title">Тануки</h2>
+                  <span class="card__time">50 мин</span>
+                </div>
+                <div class="card__price">
+                  <span class="card__rating">4.5</span>
+                  <div class="card__total">
+                    <span class="card__cost">От 900 ₽</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card__img" src="img/goods-3.jpg" alt="pizza image">
+              <div class="card__footer">
+                <div class="card__info">
+                  <h2 class="card__title">FoodBand</h2>
+                  <span class="card__time">50 мин</span>
+                </div>
+                <div class="card__price">
+                  <span class="card__rating">4.5</span>
+                  <div class="card__total">
+                    <span class="card__cost">От 900 ₽</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card__img" src="img/goods-4.jpg" alt="pizza image">
+              <div class="card__footer">
+                <div class="card__info">
+                  <h2 class="card__title">Жадина-пицца</h2>
+                  <span class="card__time">50 мин</span>
+                </div>
+                <div class="card__price">
+                  <span class="card__rating">4.5</span>
+                  <div class="card__total">
+                    <span class="card__cost">От 900 ₽</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card__img" src="img/goods-5.jpg" alt="pizza image">
+              <div class="card__footer">
+                <div class="card__info">
+                  <h2 class="card__title">Точка еды</h2>
+                  <span class="card__time">50 мин</span>
+                </div>
+                <div class="card__price">
+                  <span class="card__rating">4.5</span>
+                  <div class="card__total">
+                    <span class="card__cost">От 900 ₽</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card__img" src="img/goods-6.jpg" alt="pizza image">
+              <div class="card__footer">
+                <div class="card__info">
+                  <h2 class="card__title">PizzaBurger</h2>
+                  <span class="card__time">50 мин</span>
+                </div>
+                <div class="card__price">
+                  <span class="card__rating">4.5</span>
+                  <div class="card__total">
+                    <span class="card__cost">От 900 ₽</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.goods__body -->
+      </section>
+      <!-- /.goods -->
+    </div>
+    <!-- ./container -->
+  </main>
+  <!-- ./page-main -->
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__inner">
+        <svg class="logo page-footer__logo" width="101" height="37">
+          <use href="ico/icons.svg#logo"></use>
+        </svg>
+        <!-- ./logo -->
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#!">Ресторанам</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#!">Курьерам</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#!">Пресс-центр</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#!">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ./footer-nav -->
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#!">
+              <svg class="social__ico" width="26" height="26">
+                <use href="ico/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#!">
+              <svg class="social__ico" width="26" height="26">
+                <use href="ico/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#!">
+              <svg class="social__ico" width="36" height="21">
+                <use href="ico/icons.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- ./social -->
+      </div>
+    </div>
+  </footer>
+  <!-- ./page-footer -->
+
+</body>
+
+</html>
