@@ -44,15 +44,10 @@ body {
 } */
 
 /* RESET CSS */
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+*,
+*:before,
+*:after {
   box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
 }
 
 * {
@@ -100,7 +95,14 @@ button {
 }
 
 /* GLOBAL STYLES */
+html,
+body,
+main {
+  min-height: 100%;
+}
 .page {
+  display: flex;
+  flex-direction: column;
   font: 16px / 1.5 "Roboto Regular", sans-serif;
   color: #000000;
   background-color: #FFFFFF;
@@ -278,6 +280,7 @@ button {
 .card__footer {
   padding: 21px 24px 35px;
 }
+
 .card__info {
   margin-bottom: 10px;
   display:  flex;
@@ -331,6 +334,118 @@ button {
   background-color: #8C8C8C;
   border-radius: 50%;
 }
+
+/* RESTAURANT component */
+.restaurant {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.restaurant__title {
+  font: bold 36px / 42px "Roboto Bold", sans-serif;
+  color: #000000;
+}
+.restaurant__rating {
+  margin-left: 30px;
+  margin-right: 26px;
+  font: 18px / 32px "Roboto Bold", sans-serif;
+  color: #FFC107;
+}
+.restaurant__rating::before {
+  content: url(ico/star.svg);
+  margin-right: 7px;
+}
+.restaurant__cost,
+.restaurant__tag {
+  display: inline-flex;
+  align-items: center;
+  font: 18px / 32px "Roboto Regular", sans-serif;
+  color: #8C8C8C;
+}
+.restaurant__cost::after {
+  content: "";
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 5px;
+  height: 5px;
+  background-color: #8C8C8C;
+  border-radius: 50%;
+}
+
+.cards {
+  overflow: hidden;
+}
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-right: -24px;
+  margin-bottom: -24px;
+}
+.cards__item {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  width: calc(100% / 3 - 24px);
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.cards__img {
+  object-fit: cover;
+  height: 212px;
+}
+.cards__footer {
+  padding: 23px 23px 30px 23px;
+  display: flex;
+  flex-direction: column;
+}
+.cards__title {
+  margin-bottom: 10px;
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.cards__text {
+  margin-bottom: 25px;
+  font: 18px / 21px "Roboto Regular", sans-serif;
+  color: #8C8C8C;
+}
+.cards__total {
+  display: flex;
+  align-items: center;
+}
+.cards__cost {
+  margin-left: 32px;
+  font: 700 20px / 32px "Roboto Bold", sans-serif;
+  color: #000000;
+}
+.btn--rest {
+  font-family: "SF Pro Display Regular";
+}
+.btn__ico--rest {
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+@media (max-width: 900px) {
+  .cards__item {
+    width: calc(100% / 2 - 24px);
+  }
+}
+@media (max-width: 620px) {
+  .cards__item {
+    width: 100%;
+  }
+}
+
 
 /* PAGE-FOOTER component */
 .page-footer {

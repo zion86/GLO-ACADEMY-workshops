@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
-  <title>Delivery Food</title>
+  <title>Delivery Food - Restaurant</title>
 </head>
 
 <body class="page">
@@ -51,134 +51,127 @@
 
   <main class="page-main">
     <div class="container">
-      <section class="promo">
-        <div class="promo__inner">
-          <h1 class="promo__title">Онлайн-сервис<br> доставки еды на дом</h1>
-          <p class="promo__text">Блюда из любимого ресторана привезет<br> курьер в перчатках, маске и с антисептиком</p>
-        </div>
+
+      <section class="restaurant">
+        <h2 class="restaurant__title">Пицца плюс</h2>
+        <span class="restaurant__rating">4.5</span>
+        <span class="restaurant__cost">От 900 ₽</span>
+        <span class="restaurant__tag">Пицца и суши</span>
       </section>
-      <!-- /.promo -->
-      <section class="goods">
-        <header class="goods__header">
-          <h2 class="goods__title">Рестораны</h2>
-          <form action="/" class="search-form goods__search-form">
-            <input class="search-form__input goods__input" type="search" placeholder="Поиск блюд и ресторанов">
-            <svg class="search-form__ico" width="16" height="16">
-              <use href="ico/icons.svg#search"></use>
-            </svg>
-          </form>
-          <!-- ./search-form -->
-        </header>
-        <!-- ./goods__header -->
+      <!-- ./restaurant header -->
 
-        <div class="goods__body">
-          <div class="goods__wrapper">
-            <div class="card">
-              <img class="card__img" src="img/goods-1.jpg" alt="pizza image">
-              <div class="card__footer">
-                <div class="card__info">
-                  <h2 class="card__title">Пицца плюс</h2>
-                  <span class="card__time">50 мин</span>
-                </div>
-                <div class="card__price">
-                  <span class="card__rating">4.5</span>
-                  <div class="card__total">
-                    <span class="card__cost">От 900 ₽</span>
-                    <span class="card__tag">Пицца</span>
-                  </div>
+      <section class="cards">
+        <ul class="cards__list">
+          <li class="cards__item">
+            <img class="cards__img" src="img/sushi-1.jpg" alt="sushi roll">
+            <div class="cards__footer">
+              <h2 class="cards__title">Ролл угорь стандарт</h2>
+              <p class="cards__text">Рис, угорь, соус унаги, кунжут, водоросли нори.</p>
+              <div class="cards__price">
+                <div class="cards__total">
+                  <button class="btn btn--enter btn--rest">В корзину
+                    <svg class="btn__ico btn__ico--white btn__ico--rest" width="12" height="14">
+                      <use href="ico/icons.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <span class="cards__cost">250 ₽</span>
                 </div>
               </div>
             </div>
+          </li>
 
-            <div class="card">
-              <img class="card__img" src="img/goods-2.jpg" alt="pizza image">
-              <div class="card__footer">
-                <div class="card__info">
-                  <h2 class="card__title">Тануки</h2>
-                  <span class="card__time">50 мин</span>
-                </div>
-                <div class="card__price">
-                  <span class="card__rating">4.5</span>
-                  <div class="card__total">
-                    <span class="card__cost">От 900 ₽</span>
-                    <span class="card__tag">Пицца</span>
-                  </div>
+          <li class="cards__item">
+            <img class="cards__img" src="img/sushi-2.jpg" alt="sushi roll">
+            <div class="cards__footer">
+              <h2 class="cards__title">Калифорния лосось стандарт</h2>
+              <p class="cards__text">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</p>
+              <div class="cards__price">
+                <div class="cards__total">
+                  <button class="btn btn--enter btn--rest">В корзину
+                    <svg class="btn__ico btn__ico--white btn__ico--rest" width="12" height="14">
+                      <use href="ico/icons.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <span class="cards__cost">395 ₽</span>
                 </div>
               </div>
             </div>
+          </li>
 
-            <div class="card">
-              <img class="card__img" src="img/goods-3.jpg" alt="pizza image">
-              <div class="card__footer">
-                <div class="card__info">
-                  <h2 class="card__title">FoodBand</h2>
-                  <span class="card__time">50 мин</span>
-                </div>
-                <div class="card__price">
-                  <span class="card__rating">4.5</span>
-                  <div class="card__total">
-                    <span class="card__cost">От 900 ₽</span>
-                    <span class="card__tag">Пицца</span>
-                  </div>
+          <li class="cards__item">
+            <img class="cards__img" src="img/sushi-3.jpg" alt="sushi roll">
+            <div class="cards__footer">
+              <h2 class="cards__title">Окинава стандарт</h2>
+              <p class="cards__text">Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</p>
+              <div class="cards__price">
+                <div class="cards__total">
+                  <button class="btn btn--enter btn--rest">В корзину
+                    <svg class="btn__ico btn__ico--white btn__ico--rest" width="12" height="14">
+                      <use href="ico/icons.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <span class="cards__cost">250 ₽</span>
                 </div>
               </div>
             </div>
+          </li>
 
-            <div class="card">
-              <img class="card__img" src="img/goods-4.jpg" alt="pizza image">
-              <div class="card__footer">
-                <div class="card__info">
-                  <h2 class="card__title">Жадина-пицца</h2>
-                  <span class="card__time">50 мин</span>
-                </div>
-                <div class="card__price">
-                  <span class="card__rating">4.5</span>
-                  <div class="card__total">
-                    <span class="card__cost">От 900 ₽</span>
-                    <span class="card__tag">Пицца</span>
-                  </div>
+          <li class="cards__item">
+            <img class="cards__img" src="img/sushi-4.jpg" alt="sushi roll">
+            <div class="cards__footer">
+              <h2 class="cards__title">Цезарь маки хl</h2>
+              <p class="cards__text">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</p>
+              <div class="cards__price">
+                <div class="cards__total">
+                  <button class="btn btn--enter btn--rest">В корзину
+                    <svg class="btn__ico btn__ico--white btn__ico--rest" width="12" height="14">
+                      <use href="ico/icons.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <span class="cards__cost">250 ₽</span>
                 </div>
               </div>
             </div>
+          </li>
 
-            <div class="card">
-              <img class="card__img" src="img/goods-5.jpg" alt="pizza image">
-              <div class="card__footer">
-                <div class="card__info">
-                  <h2 class="card__title">Точка еды</h2>
-                  <span class="card__time">50 мин</span>
-                </div>
-                <div class="card__price">
-                  <span class="card__rating">4.5</span>
-                  <div class="card__total">
-                    <span class="card__cost">От 900 ₽</span>
-                    <span class="card__tag">Пицца</span>
-                  </div>
+          <li class="cards__item">
+            <img class="cards__img" src="img/sushi-5.jpg" alt="sushi roll">
+            <div class="cards__footer">
+              <h2 class="cards__title">Ясай маки стандарт 185 г</h2>
+              <p class="cards__text">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</p>
+              <div class="cards__price">
+                <div class="cards__total">
+                  <button class="btn btn--enter btn--rest">В корзину
+                    <svg class="btn__ico btn__ico--white btn__ico--rest" width="12" height="14">
+                      <use href="ico/icons.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <span class="cards__cost">250 ₽</span>
                 </div>
               </div>
             </div>
+          </li>
 
-            <div class="card">
-              <img class="card__img" src="img/goods-6.jpg" alt="pizza image">
-              <div class="card__footer">
-                <div class="card__info">
-                  <h2 class="card__title">PizzaBurger</h2>
-                  <span class="card__time">50 мин</span>
-                </div>
-                <div class="card__price">
-                  <span class="card__rating">4.5</span>
-                  <div class="card__total">
-                    <span class="card__cost">От 900 ₽</span>
-                    <span class="card__tag">Пицца</span>
-                  </div>
+          <li class="cards__item">
+            <img class="cards__img" src="img/sushi-6.jpg" alt="sushi roll">
+            <div class="cards__footer">
+              <h2 class="cards__title">Ролл с креветкой стандарт</h2>
+              <p class="cards__text">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</p>
+              <div class="cards__price">
+                <div class="cards__total">
+                  <button class="btn btn--enter btn--rest">В корзину
+                    <svg class="btn__ico btn__ico--white btn__ico--rest" width="12" height="14">
+                      <use href="ico/icons.svg#cart"></use>
+                    </svg>
+                  </button>
+                  <span class="cards__cost">250 ₽</span>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- /.goods__body -->
+          </li>
+        </ul>
       </section>
-      <!-- /.goods -->
+      <!-- ./cards -->
     </div>
     <!-- ./container -->
   </main>
@@ -262,6 +255,7 @@
     </div>
   </footer>
   <!-- ./page-footer -->
+
 
 </body>
 
