@@ -30,14 +30,14 @@
             <button class="btn btn--enter">
               <svg class="btn__ico btn__ico--white" width="12" height="14">
                 <use href="ico/icons.svg#avatar"></use>
-              </svg>Войти
+              </svg><span class="btn__name btn__name--hidden">Войти</span>
             </button>
           </li>
           <li class="btns-list__item">
             <button class="btn">
               <svg class="btn__ico" width="15" height="13">
                 <use href="ico/icons.svg#cart"></use>
-              </svg>Корзина
+              </svg><span class="btn__name btn__name--hidden">Корзина</span>
             </button>
           </li>
         </ul>
@@ -55,10 +55,12 @@
       <section class="restaurant">
         <h2 class="restaurant__title">Пицца плюс</h2>
         <span class="restaurant__rating">4.5</span>
-        <span class="restaurant__cost">От 900 ₽</span>
-        <span class="restaurant__tag">Пицца и суши</span>
+        <div class="restaurant__price">
+          <span class="restaurant__cost">От 900 ₽</span>
+          <span class="restaurant__tag">Пицца и суши</span>
+        </div>
       </section>
-      <!-- ./restaurant header -->
+      <!-- ./restaurant -->
 
       <section class="cards">
         <ul class="cards__list">
