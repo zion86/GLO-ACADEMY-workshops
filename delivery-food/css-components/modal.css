@@ -64,13 +64,14 @@
   align-items: center;
 }
 .modal__summ {
-  padding: 15px 20px;
+  padding: 15px 25px;
   font-family: "Roboto Bold";
   font-size: 20px;
   line-height: 23px;
   color: #FAFAFA;
   background-color: #262626;
   border-radius: 5px;
+  white-space: nowrap;
 }
 
 
@@ -96,6 +97,8 @@
 }
 .table__data {
   margin-left: 47px;
+  display: flex;
+  align-items: center;
 }
 .table__price {
   font-family: "Roboto Bold";
@@ -103,6 +106,7 @@
   font-size: 20px;
   line-height: 32px;
   color: #000000;
+  white-space: nowrap;
 }
 .table__btn {
   padding: 5px 16px;
@@ -118,4 +122,48 @@
   font-family: "SF Pro Display Regular";
   font-size: 16px;
   line-height: 24px;
+}
+
+@media (max-width: 580px) {
+  .modal {
+    padding: 16px;
+  }
+  .modal__window {
+    padding: 24px;
+  }
+  .modal__table {
+    margin-top: 16px;
+  }
+  .modal__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .table__title {
+    font-size: 14px;
+  }
+  .table__data {
+    margin-left: 16px;
+  }
+  .table__price {
+    font-size: 16px;
+  }
+  .table__btn {
+    padding: 4px 12px;
+  }
+  .table__count {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .modal__summ {
+    margin-top: 16px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    order: 1;
+  }
+  .modal__footer {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
 }
