@@ -1,4 +1,5 @@
 @import "css-components/restaurant.css";
+@import "css-components/modal.css";
 
 @font-face {
   font-family: "Roboto Regular";
@@ -96,6 +97,21 @@ button {
   cursor: pointer;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  padding: 0;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+th {
+  font-weight: inherit;
+}
+
 /* GLOBAL STYLES */
 html,
 body,
@@ -108,6 +124,9 @@ main {
   font: 16px / 1.5 "Roboto Regular", sans-serif;
   color: #000000;
   background-color: #FFFFFF;
+}
+.page--lock {
+  overflow: hidden;
 }
 
 .container {
@@ -143,7 +162,7 @@ main {
 }
 
 /* LOGO component */
-.logo {
+.logo__ico {
   min-width: 101px;
   fill: #000000;
 }
@@ -254,20 +273,22 @@ main {
 .goods__body {
   overflow: hidden;
 }
-.goods__wrapper {
+
+/* CARD component */
+.card {
   margin-right: -24px;
   margin-bottom: -29px;
   display: flex;
   flex-wrap:  wrap;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-
-/* CARD component */
-.card {
+.card__item {
   margin-right: 24px;
   margin-bottom: 29px;
   width: calc((100% / 3) - 24px);
-  display: inline-flex;
+}
+.card__link {
+  display: flex;
   flex-direction: column;
   white-space: nowrap;
   background-color: #FFFFFF;
@@ -282,7 +303,6 @@ main {
 .card__footer {
   padding: 21px 24px 35px;
 }
-
 .card__info {
   margin-bottom: 10px;
   display:  flex;
@@ -391,7 +411,7 @@ main {
   .page-header__search-form {
     margin-right: 3%;
   }
-  .card {
+  .card__item {
     width: calc((100% / 2) - 24px);
   }
   .page-footer__logo {
@@ -455,7 +475,7 @@ main {
     margin-right: 10px;
     font-size: 24px;
   }
-  .card {
+  .card__item {
     width: 100%;
   }
   .card__footer {
